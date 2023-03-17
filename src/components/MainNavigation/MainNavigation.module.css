@@ -1,0 +1,14 @@
+.sectionNav{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:rgb(45, 45, 45);
+    height:auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media(max-width:480px){
+    .sectionNav{
+        height: auto;
+    }
+}

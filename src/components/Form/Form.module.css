@@ -1,0 +1,101 @@
+.searchForm {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem ;
+    align-items: center;
+    font-size: 14px;
+    flex:1;
+
+    background-color: #191919;
+    color: #bababa;
+    
+}
+
+.searchForm h3 {
+    border-bottom: 1px solid #8c8c8c;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 350;
+    letter-spacing: -0.5px;
+}
+
+.searchForm input {
+    background: #fff;
+    font: 10px Arial, Helvetica, sans-serif;
+    color: #191919;
+    padding: 3px 10px;
+    height: 22px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.searchForm label{
+    align-self:flex-start;
+}
+
+.colSection{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem 
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    align-items: center;
+}
+
+
+.searchForm select {
+    background: #fff;
+    font: 10px Arial, Helvetica, sans-serif;
+    color: #191919;
+    float: left;
+    padding: 3px 10px;
+    height: 22px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+button {
+    margin-top: 1rem;
+    height: 24px;
+    width: 100px;
+    background-color: rgb(74, 194, 74);
+    border-radius: 2px;
+    border: none;
+}
+
+.info {
+    text-align: left;
+    padding-top: 0.5rem;
+}
+
+.links {
+    color: rgb(74, 194, 74);
+}
+
+.links:hover {
+    color: #8c8c8c
+}
+
+
+@media(max-width:630px) {
+    .searchForm{
+        padding:1.5rem  6rem
+    }
+}
+
+@media(max-width:480px) {
+    .searchForm{
+        padding:1.5rem  4rem
+    }
+}
+
+@media(max-width:380px) {
+    .searchForm{
+        padding:1.5rem  2rem
+    }
+}
