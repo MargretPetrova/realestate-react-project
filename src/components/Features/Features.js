@@ -22,8 +22,8 @@ const Features = ()=>{
                 <h4>Selling</h4>
                 </div>
                 <div className={styles.colsParagraf}>
-                <p className={styles.paragraf}><strong>Decide whether to sell or stay!</strong></p>
-                <p className={styles.paragraf2}> Wondering if now is a good time to sell?</p>
+                <p className={styles.paragraf}><strong>Check this week sold price and decide to sell </strong></p>
+                <p className={styles.paragraf2}> Wondering if now is a good time to sell? See your options</p>
                 <button><Link  className={styles.links} to='#'>Read more</Link></button>
                 </div>
                  </article>

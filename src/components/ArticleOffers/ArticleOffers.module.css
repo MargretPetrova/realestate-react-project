@@ -1,6 +1,7 @@
 .offers{
     display:flex;
     flex-direction: column;
+    
    
 }
 .offers h3{
@@ -17,8 +18,11 @@
     justify-content: space-between;
     list-style-type: none;
    
+   
 }
 .list li{
+    display: flex;
+    flex-direction: column;
     padding-right: 0.5rem;
     
 }
