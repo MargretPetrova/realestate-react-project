@@ -18,8 +18,8 @@ const Header = () => {
            <div className={styles.logos}>
            <div className={styles.link}>
            
-           <Link className={styles.logo2} to='/home'><img src={logo2}></img></Link>
-       <Link className={styles.logo1} to='/home'><img src={logo1}></img></Link>
+           <Link className={styles.logo2} to='/'><img src={logo2}></img></Link>
+       <Link className={styles.logo1} to='/'><img src={logo1}></img></Link>
        
        </div>
        {/* <div className={styles.icons}>
@@ -44,12 +44,12 @@ const Header = () => {
 
     
         <ul className={styles.list}>
-           <li><Link className={styles.links} to='/home' >Main Page</Link></li>
-           <li><Link className={styles.links} to='/home' >Buying Estate</Link></li>
-           <li><Link className={styles.links} to='/home' >Selling Estate</Link></li>
-           <li><Link className={styles.links} to='/home' >Renting Estate</Link></li>
-           <li><Link className={styles.links} to='/home' >Finance</Link></li>
-           <li><Link className={styles.links} to='/home' >Contact Us</Link></li>
+           <li><Link className={styles.links} to='/' >Main Page</Link></li>
+           <li><Link className={styles.links} to='/buy' >Buying Estate</Link></li>
+           <li><Link className={styles.links} to='/sell' >Selling Estate</Link></li>
+           <li><Link className={styles.links} to='/rent' >Renting Estate</Link></li>
+           <li><Link className={styles.links} to='/finance' >Finance</Link></li>
+           <li><Link className={styles.links} to='/contacts' >Contact Us</Link></li>
         </ul>
 
     </nav>

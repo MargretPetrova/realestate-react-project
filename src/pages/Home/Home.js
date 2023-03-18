@@ -13,7 +13,7 @@ function Home(){
 </SectionMain>
 <SectionMain>
 <Features/>
-    <ArticleOffers/>
+    {/* <ArticleOffers/> */}
     
 </SectionMain>
 

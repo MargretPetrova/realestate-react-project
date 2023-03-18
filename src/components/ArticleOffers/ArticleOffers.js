@@ -2,20 +2,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Link} from 'react-router-dom';
-import styles from '../ArticleOffers/ArticleOffers.module.css'
+import styles from '../ArticleOffers/ArticleOffers.module.css';
+import home1 from '../../images/home1.jpg';
+import home2 from '../../images/home2.jpg';
+import home3 from '../../images/home3.jpg';
+
+
+const homes=[{homeImage:home1, homeTitle:'home1',id:1}, {homeImage:home2, homeTitle:'home2',id:2},
+ {homeImage:home3, homeTitle:'home3',id:3}]
 
 const ArticleOffers = ()=>{
     return (
         <div className={styles.offers}>
-           <h3>Special Offers</h3>
+           <h3>Latest property news</h3>
            <ul className={styles.list}>
-              <li> <Link className={styles.link} to="#">Home Loan Offer</Link></li>
-              <li><Link className={styles.link} to="#">Free Calculators</Link></li>
-              <li><Link className={styles.link} to="#">Free Loan Tools</Link></li>
-              <li><Link className={styles.link} to="#">Value Your Home</Link></li>
-              <li><Link className={styles.link} to="#">Recently Sold Properties</Link></li>
-              <li><Link className={styles.link} to="#">Suburb Statistics</Link></li>
-              <li><Link className={styles.link} to="#">Compare Property Prices</Link></li>
+            {homes.map(x=><li key={x.id}>
+            <img src={x.homeImage} alt='noalt'></img>
+            <p>{x.homeTitle}</p>
+            <button>Read More</button>
+            </li>)}
+              
             </ul>
         </div>
     )
