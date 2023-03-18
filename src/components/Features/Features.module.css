@@ -6,9 +6,6 @@
     width: 85%;
     height: 100%;
     font-size: 14px;
-    margin: 1rem;
-    padding-left: 5rem;
-
 }
 
 .title {
@@ -93,29 +90,11 @@
     text-decoration: underline;
 }
 
-@media(max-width: 1200px) {
-    .features {
-        padding-left: 1.5rem;
-    }
-}
+
 
 @media (max-width: 1000px) {
     .features {
-        padding-left: 0rem;
-    }
-}
-
-@media (max-width: 830px) {
-    .features {
-        width: 100%;
         padding-left: 0.5rem;
-    }
-}
-
-@media(max-width:630px) {
-    .features {
-        margin: 0rem;
-        padding-left: 0rem;
     }
 }
 
