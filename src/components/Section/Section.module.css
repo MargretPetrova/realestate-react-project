@@ -1,12 +1,14 @@
 .searchBox{
     display: flex;
     flex-wrap: wrap;
-    width:1000px;
+    width:800px;
     margin-bottom: 2rem;
-    padding:0 1rem
+    padding:0 1rem;
+   
 }
-@media(max-width: 1000px){
+
+@media(max-width: 900px){
     .searchBox{
-        width: auto;
+        width: 95%;
     }
 }

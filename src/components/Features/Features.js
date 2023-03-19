@@ -13,7 +13,7 @@ const Features = ()=>{
           
            
           
-            <h3 className={styles.title}>Buyers. Sellers. Proprietors. Agents.</h3>
+            <h3 className={styles.title}>Buyers. Sellers. Agents.</h3>
 
             <div className={styles.wrapper}>
 

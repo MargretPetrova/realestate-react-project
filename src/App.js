@@ -10,18 +10,19 @@ import RootLayout from './pages/Root/Root';
 import SellingPage from './pages/Selling/Selling';
 
 const router = createBrowserRouter([
-  {path:'/',
-element:<RootLayout/>,
-id: 'root',
-children:[{index:true, element:<Home/>},
-{path: 'sell', element:<SellingPage/>},
-{path: 'buy', element:<BuyingPage/>},
-{path: 'rent', element:<RentingPage/>},
-{path: 'finance', element:<FinancePage/>},
-{path: 'contacts', element:<ContactsPage/>},
-{path: 'auth', element:<AuthenticationPage/>}
-]
-}
+  {
+    path: '/',
+    element: <RootLayout />,
+    id: 'root',
+    children: [{ index: true, element: <Home /> },
+    { path: 'sell', element: <SellingPage /> },
+    { path: 'buy', element: <BuyingPage /> },
+    { path: 'rent', element: <RentingPage /> },
+    { path: 'finance', element: <FinancePage /> },
+    { path: 'contacts', element: <ContactsPage /> },
+    { path: 'auth', element: <AuthenticationPage /> }
+    ]
+  }
 ])
 function App() {
   return <RouterProvider router={router} />;
