@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { ArticleOffers } from "../../components/ArticleOffers/ArticleOffers";
 import { Features } from "../../components/Features/Features";
 import FormComponent from "../../components/Form/Form";

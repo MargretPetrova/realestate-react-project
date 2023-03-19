@@ -1,0 +1,36 @@
+.slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    width: auto;
+}
+.list{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+   justify-content: flex-start;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    overflow:hidden;
+    margin: -0.5rem;
+}
+.chevronL{
+    z-index: 1;
+    align-self: center;
+    border-radius: 50%;
+    background-color: inherit;
+    box-shadow: rgb(0 0 0) 0px 0rem 2rem 2px;
+    margin-right: -3rem;
+    cursor: pointer;
+}
+.chevronR{
+    z-index: 1;
+    align-self: center;
+    border-radius: 50%;
+    background-color: inherit;
+    box-shadow: rgb(0 0 0) 0px 0rem 2rem 2px;
+    margin-left: -3rem;
+    cursor: pointer;
+}

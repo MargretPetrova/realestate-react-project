@@ -46,7 +46,7 @@ const Features = ()=>{
                 </div>
                 <div className={styles.colsParagraf}>
                 <p className={styles.paragraf}><strong>Are you a tenant looking for a new place?</strong></p>
-                <p className={styles.paragraf2}>List your property for rent through an agent or on your own</p>
+                <p className={styles.paragraf2}>List your property for rent with an agent or on your own</p>
                 <button><Link className={styles.links} to='#'>Read more</Link></button>
                  </div>
                  </article>

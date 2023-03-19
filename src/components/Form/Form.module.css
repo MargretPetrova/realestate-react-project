@@ -71,6 +71,7 @@ button {
 .info {
     text-align: left;
     padding-top: 0.5rem;
+    font: 14px Arial, Helvetica, sans-serif;
 }
 
 .links {
