@@ -8,13 +8,15 @@ import Home from './pages/Home/Home';
 import RentingPage from './pages/Renting/RentPage';
 import RootLayout from './pages/Root/Root';
 import SellingPage from './pages/Selling/Selling';
+import {loader } from './pages/Home/Home'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
     id: 'root',
-    children: [{ index: true, element: <Home /> },
+    loader: ()=>loader(),
+    children: [{ index: true, element: <Home />, },
     { path: 'sell', element: <SellingPage /> },
     { path: 'buy', element: <BuyingPage /> },
     { path: 'rent', element: <RentingPage /> },

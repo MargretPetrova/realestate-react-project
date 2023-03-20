@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import {Link} from 'react-router-dom';
 import styles from '../Features/Features.module.css'
 import imgSell from '../../images/house.png';

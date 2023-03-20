@@ -9,6 +9,7 @@
     background-color: #191919;
     color: #bababa;
     
+    
 }
 
 .searchForm h3 {
@@ -31,6 +32,7 @@
 
 .searchForm label{
     align-self:flex-start;
+    font: 14px Arial, Helvetica, sans-serif;
 }
 
 .colSection{
@@ -50,7 +52,7 @@
 
 .searchForm select {
     background: #fff;
-    font: 10px Arial, Helvetica, sans-serif;
+    font: 12px Arial, Helvetica, sans-serif;
     color: #191919;
     float: left;
     padding: 3px 10px;
@@ -66,12 +68,13 @@ button {
     background-color: rgb(74, 194, 74);
     border-radius: 2px;
     border: none;
+    font: 14px Arial, Helvetica, sans-serif;
 }
 
 .info {
     text-align: left;
     padding-top: 0.5rem;
-    font: 14px Arial, Helvetica, sans-serif;
+    font: 13px Arial, Helvetica, sans-serif;
 }
 
 .links {

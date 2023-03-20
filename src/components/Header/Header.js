@@ -22,14 +22,6 @@ const Header = () => {
        <Link className={styles.logo1} to='/'><img src={logo1}></img></Link>
        
        </div>
-       {/* <div className={styles.icons}>
-           <Link to='www.facebook.com'><FontAwesomeIcon icon={faFacebook} color="blue" size="2x" /></Link>
-           <Link to='www.facebook.com'><FontAwesomeIcon icon={faTwitter} color="blue" size="2x" /></Link>
-           <Link to='www.facebook.com'><FontAwesomeIcon icon={faInstagram} color="blue" size="2x" /></Link>
-           
-       </div> */}
-   
-       
        <button className={styles.navButton} onClick={() => {
      setIsNavExpanded(!isNavExpanded);
    }}>
@@ -44,12 +36,16 @@ const Header = () => {
 
     
         <ul className={styles.list}>
-           <li><Link className={styles.links} to='/' >Main Page</Link></li>
-           <li><Link className={styles.links} to='/buy' >Buying Estate</Link></li>
-           <li><Link className={styles.links} to='/sell' >Selling Estate</Link></li>
-           <li><Link className={styles.links} to='/rent' >Renting Estate</Link></li>
+           <li><Link className={styles.links} to='/' >Home</Link></li>
+           <li><Link className={styles.links} to='/buy' >Buy</Link></li>
+           <li><Link className={styles.links} to='/sell' >Sell</Link></li>
+           <li><Link className={styles.links} to='/rent' >Rent</Link></li>
            <li><Link className={styles.links} to='/finance' >Finance</Link></li>
-           <li><Link className={styles.links} to='/contacts' >Contact Us</Link></li>
+           <li><Link className={styles.links} to='/contacts' >News</Link></li>
+          <li className={styles.guest}>Sign up</li>
+          <li className={styles.guest}>Login</li>
+          <li className={styles.user}>Logout</li>
+          
         </ul>
 
     </nav>
