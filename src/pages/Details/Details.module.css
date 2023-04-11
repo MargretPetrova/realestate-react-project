@@ -1,0 +1,120 @@
+.title {
+    display: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    padding-bottom: 0.5rem;
+}
+
+.offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.information {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #191919;
+    color: #bababa;
+    padding-left: 1rem;
+    padding: 1.5rem;
+}
+
+.informationTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.informationTitle h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #8c8c8c;
+}
+
+.informationTitle p {
+    font-size: 20px;
+}
+
+.informationTitle.info h3 {
+    color: rgb(74, 194, 74);
+    font-size: 35px;
+    font-weight: 350;
+    letter-spacing: -2px;
+    border-bottom: none;
+
+}
+
+.information h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+strong {
+    font-size: larger;
+    color: rgb(128, 164, 32);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: 1;
+    gap: 1rem;
+    /* padding-left: 1rem; */
+}
+
+.cols {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0.2rem;
+
+}
+
+.cols ul {
+
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.cols ul li {
+    flex: 1;
+    list-style-type: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    padding-left: 0.2rem;
+    padding-top: 1rem;
+}
+
+@media (max-width: 630px) {
+    .information {
+        display: none;
+    }
+
+    .cols ul {
+        flex-direction: column;
+    }
+
+    .title {
+        display: flex;
+
+    }
+}

@@ -5,7 +5,7 @@ const ScrollItem = ({ children }) => {
     const slideLeft = () => {
 
         const slider = document.getElementById('chevronL');
-        console.log(slider.scrollLeft);
+       
         slider.scrollLeft -= 300;
 
     }
@@ -13,7 +13,7 @@ const ScrollItem = ({ children }) => {
 
         const slider = document.getElementById('chevronL');
         slider.scrollLeft += 300;
-        console.log(slider.scrollLeft);
+       
 
     }
     return (

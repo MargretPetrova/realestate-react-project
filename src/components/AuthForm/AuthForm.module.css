@@ -1,0 +1,52 @@
+.registerForm{
+    display: flex;
+    flex-direction: column;
+   justify-content:space-between ;
+    align-items: center;
+    flex: 1;
+    padding: 1rem;
+    background-color: #191919;
+    color: #bababa;
+    font: 15px Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    font-weight:lighter;
+    gap: 1rem;
+    border-radius: 1%;
+    
+}
+.cols{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.registerForm h4{
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #8c8c8c;
+   
+}
+.cols div{
+    display: flex;
+    flex-direction: column;
+}
+.cols .info{
+    display: flex;
+    flex-direction: row;
+    font: 13px Arial, Helvetica, sans-serif;
+    
+}
+.links{
+    text-decoration-line: none;
+    color:  rgb(74, 194, 74);
+    
+}
+.cols p{
+   
+        align-self: center;
+        font: 13px Arial, Helvetica, sans-serif;
+   
+}

@@ -2,6 +2,7 @@ import styles from '../Form/Form.module.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom';
+import Button from '../SmallHelpers/Buttons';
 
 const FormComponent = () => {
   return (
@@ -85,7 +86,7 @@ const FormComponent = () => {
           <option>More</option>
         </select>
 
-        <button>Proposals</button>
+        <Button name='Proposals'/>
       </div>
       </div>
 

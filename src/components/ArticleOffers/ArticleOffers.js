@@ -6,24 +6,24 @@ import home1 from '../../images/home1.jpg';
 import home2 from '../../images/home2.jpg';
 import home3 from '../../images/home3.jpg';
 import { ScrollItem } from '../ScrollItem/ScrollItem';
+import { Link } from 'react-router-dom';
+import ScrollLiItems from '../ScrollLiItems/ScrollLiItems';
+import TitleConponent from '../SmallHelpers/Title';
 
 const ArticleOffers = (props) => {
     const items = props.homes;
   
+  
     return (
         <div className={styles.offers}>
-            <h3>Explore All New Homes</h3>
+            <TitleConponent title='Explore All New Homes'/>
             <ScrollItem>
-                {items && items.map(x => <li className={styles.liItems} key={x.id}>
-                    <img src={x.image} alt='noalt'></img>
-                    <p>{x.title}</p>
-                    <button>Details</button>
-                </li>)}
+                {items && items.map(x => <ScrollLiItems item ={x}/>)}
              
                
             </ScrollItem>
         </div>
     )
-
+   
 }
 export { ArticleOffers }

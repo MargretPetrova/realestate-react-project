@@ -7,7 +7,24 @@
     width: 100%;
 }
 
-.link {
+.registerLinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+.registerLinks .guest {
+    text-decoration-line: none;
+    letter-spacing: -1.5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+
+
+}
+
+.LogosLinks {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -20,7 +37,21 @@
     z-index: 1;
     margin-bottom: -3rem;
 }
-
+.button {
+    margin-top: 1rem;
+    height: 35px;
+    width: 100px;
+    background-color: rgb(128, 164, 32);
+    border-radius: 2px;
+    border: none;
+    font: 14px Arial, Helvetica, sans-serif;
+    text-decoration-color: black;
+}
+.buttonLinks{
+   color:black;
+    text-decoration-line: none;
+ 
+}
 .nav {
     background: #f5f5f8;
     width: 100%;
@@ -33,15 +64,15 @@
 .nav ul {
     display: flex;
     width: 70%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
-    padding: 1rem;
+    flex: 1;
 }
 
 .nav ul li {
     display: inline;
-    width: 15.5%;
-    padding-left: -1px;
+    
+    
 }
 
 .list li :link {
@@ -50,12 +81,10 @@
 }
 
 
-.list .user{
+.list .user {
     display: none;
 }
-.list .guest{
-    
-}
+
 .navButton {
     display: none;
     background-color: rgb(74, 194, 74);
@@ -63,8 +92,8 @@
 
 /* nav expanded */
 .nav.expanded {
-    margin-top: 0;
-    height: 300px;
+    margin-top: -1rem;
+    height: 200px;
     align-items: center;
     display: none;
 }
@@ -74,16 +103,14 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
-    height: 300px;
     background-color: white;
-    margin-left: -2rem;
+    width: 100%;
+ padding: 0.5rem 0rem ;
 }
 
 .nav.expanded ul li {
     display: flex;
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 0.2rem;
     width: 100%;
 }
 
@@ -108,14 +135,12 @@
 
 
 @media (max-width: 830px) {
-    .nav {
-        font-size: 1.3rem;
-    }
-
+  
     .nav ul {
-        width: 100%;
         display: flex;
+        gap: 0.5rem;
     }
+   
 
     .icons {
         justify-content: flex-end;
@@ -134,6 +159,29 @@
 }
 
 @media(max-width:480px) {
+    .logos {
+        height: auto;
+    }
+
+    .logos div:last-of-type {
+        display: none;
+    }
+ 
+    .guest{
+      color: black;
+      width: 100%;
+     text-align: center;
+     font-weight: 400;
+     text-decoration-line: none;
+     letter-spacing: -2px;
+        
+    }
+    .guest:hover{
+        color: rgb(74, 194, 74);
+        border-bottom: 1px solid rgb(74, 194, 74);
+    }
+
+    
 
     .icons {
         display: none;

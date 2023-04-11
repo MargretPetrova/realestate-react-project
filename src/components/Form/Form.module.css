@@ -5,7 +5,6 @@
     align-items: center;
     font-size: 14px;
     flex:1;
-
     background-color: #191919;
     color: #bababa;
     
@@ -61,15 +60,6 @@
     margin-bottom: 5px;
 }
 
-button {
-    margin-top: 1rem;
-    height: 24px;
-    width: 100px;
-    background-color: rgb(74, 194, 74);
-    border-radius: 2px;
-    border: none;
-    font: 14px Arial, Helvetica, sans-serif;
-}
 
 .info {
     text-align: left;
