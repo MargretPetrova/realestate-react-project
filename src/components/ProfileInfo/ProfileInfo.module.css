@@ -1,0 +1,36 @@
+.contactsInfo{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+.infoDiv{
+    display: flex;
+    gap: 1rem;
+}
+.information{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.information h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+   
+}
+.information p{
+    color: white;
+}
+.infoImage img{
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 130px;
+}
+@media(max-width: 630px){
+    .contactsInfo{
+      flex-direction: column;
+    }
+}
+
+

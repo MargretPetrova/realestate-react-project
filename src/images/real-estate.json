@@ -1,0 +1,80 @@
+{
+  "homes": [
+    {
+      "bathrooms": 2,
+      "bedrooms": 3,
+      "city": "Chicago",
+      "description": "White and grey whit front garden , 2 bathrooms, 3 bedroons, wide kitchen, back door",
+      "id": 1,
+      "image": [
+        null,
+        "https://4.bp.blogspot.com/-LdjJZz58CW0/XMB40VCZpQI/AAAAAAAA9hE/0rNJvLIC18Us1r1_zRPTCOX3Ruv9p0EdgCLcBGAs/s0/62.jpg",
+        "data:image/jpeg;base64,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",
+        "https://interiorendizain.com/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B8%D0%BE%D1%80/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B8%D0%BE%D1%80/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B8%D0%BE%D1%80-%D0%BD%D0%B0-%D0%B2%D1%81%D0%B5%D0%BA%D0%B8%D0%B4%D0%BD%D0%B5%D0%B2%D0%BD%D0%B0-a169215138e643df875d5f4f68c418f8.x-large.jpg",
+        "https://images.adsttc.com/media/images/632c/1ed8/5c11/c22d/15aa/f20e/large_jpg/what-is-good-interior-design_7.jpg?1663835870",
+        "https://acherno.bg/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B8%D0%BE%D1%80%D0%B5%D0%BD-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD/%D0%B0%D0%BF%D0%B0%D1%80%D1%82%D0%B0%D0%BC%D0%B5%D0%BD%D1%82/%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE-%D0%B1%D0%B5%D0%B7%D0%B2%D1%80%D0%B5%D0%BC%D0%B8%D0%B5/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B8%D0%BE%D1%80.cover.jpg",
+        "https://flyingcdn-98ab332c.b-cdn.net/wp-content/uploads/2022/03/interior-designer-in-delhi.jpg"
+      ],
+      "price": "222 000",
+      "size": 12,
+      "title": "American house",
+      "type": "house",
+      "contacts": [{"firstName": "Ivan","lastName": "Ivanov", "email": "vakata@abv.bg", "phone": "0987654321"}]
+    },
+    {
+      "bathrooms": 3,
+      "bedrooms": 2,
+      "city": "Brisbane",
+      "description": "If you love lux that house is for you! 3 bathrooms and wide swimmingpool ",
+      "id": 2,
+      "image": [
+        null,
+        "https://img.staticmb.com/mbcontent//images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/interior-design-trends-2022-1653417252.jpeg?crop=1.00xw:0.752xh;0,0.214xh&resize=1200:*",
+        "https://cdn.home-designing.com/wp-content/uploads/2017/01/three-wide-paned-windows-grey-interior-paint.jpg"
+      ],
+      "price": 500000,
+      "size": 20,
+      "title": "Luxor white house",
+      "type": "house",
+      "contacts": [{"firstName": "Hristo","lastName": "Ivanov", "email": "vhristo@abv.bg", "phone": "089785645"}]
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 2,
+      "city": "Charllote",
+      "description": "The garage is for 2 cars, the house is with two bedrooms and 1 bathroom",
+      "id": 3,
+      "image": [
+        null,
+        "https://rimh2.domainstatic.com.au/FVQ5qYnopFz0CRJTt0eSIG-O-XE=/660x440/filters:format(jpeg):quality(80)/2017758712_1_1_220426_054243-w2000-h1201",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXPETVrE6CcF1klDsHbtHuzn_fvBdO4zTnjw&usqp=CAU",
+        "https://hips.hearstapps.com/hmg-prod/images/room-design-app-home-living-room-divider-style-inspiration-1631001962.jpg?crop=0.973xw:0.649xh;0.00680xw,0.255xh&resize=2048:*"
+      ],
+      "price": 150000,
+      "size": 4,
+      "title": "White house",
+      "type": "house",
+      "contacts": [{"firstName": "Bobi","lastName": "Ivanov", "email": "bobi@abv.bg", "phone": "0984572345"}]
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 1,
+      "city": "London",
+      "description": "A tiny cute space for a small new familly, sunny, warm and cozy",
+      "id": 4,
+      "image": [
+        null,
+        "https://wellcome-home.com/wp-content/uploads/2019/11/small-apartment-ideas.jpg",
+        "https://s.rozali.com/p/d/o/dom-dekor-(25)-188038-500x0.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lKWM06GZLuPpbqlYcHg3YtPmr3A4zi4vkA&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU6ndfhL5Hu0yePfJ1pgaVdc_wAgHNuGCzHQ&usqp=CAU"
+      ],
+      "price": 100000,
+      "size": 2,
+      "title": "Small apartment",
+      "type": "apartment",
+      "contacts": [{"firstName": "Iliq","lastName": "Ivanov", "email": "iliq@abv.bg", "phone": "0982387614"}]
+    }
+  ]
+}

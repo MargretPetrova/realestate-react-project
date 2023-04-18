@@ -1,4 +1,4 @@
-import { useLocation, useRouteLoaderData, useSearchParams } from "react-router-dom"
+import { useLocation, useRouteLoaderData } from "react-router-dom"
 import { PageContent } from "../../components/PageContent/PageContent"
 import { SectionMain } from "../../components/Section/Section"
 import { ImageCard } from "../../components/ImageCard/ImageCard"
@@ -10,17 +10,34 @@ import ColsTitleComponent from "../../components/SmallHelpers/ColsTitle";
 import TitleConponent from "../../components/SmallHelpers/Title";
 import Button from "../../components/SmallHelpers/Buttons";
 
+import ProfileInfo from "../../components/ProfileInfo/ProfileInfo";
+import { useState } from "react";
+
 export default function Details() {
-    // !!! get details for the chosen house from loaderData , late it have to be from realtime datebase 
-    const homes = useRouteLoaderData('root')
+    // !!! get details for the chosen house from loaderData , late it have to be from datebase 
+    const homes = useRouteLoaderData('root');
+    const [showInfo, setShowInfo] = useState(false);
+    const [buttonName, setButtonName] = useState('Show Contacts')
+
     const location = useLocation()
     const id = location.pathname.split('/catalog/')[1];
     const existing = getById(id, homes);
 
-    const images = (existing.image).slice(1)
-  
+    const images = (existing.image).slice(1);
+
+
+    function showInfoHandler(e){
+        setShowInfo(!showInfo);
+        if (showInfo) {
+            setButtonName('Show Contacts')
+        }else{
+            setButtonName('Hide Contacts')
+        }
+        
+    }
+
     return <PageContent>
-<h2 className={styles.title}>{existing.title}</h2>
+        <h2 className={styles.title}>{existing.title}</h2>
 
         <SectionMain>
             <ImageCard image={existing.image[1]} />
@@ -41,9 +58,9 @@ export default function Details() {
         </SectionMain>
         <SectionMain>
             <div className={styles.info}>
-                <TitleConponent title={existing.title}/>
-                <ColsTitleComponent srcImage={googleMap} title={existing.city}/>
-              
+                <TitleConponent title={existing.title} />
+                <ColsTitleComponent srcImage={googleMap} title={existing.city} />
+
                 <div className={styles.cols}>
                     <ul>
                         <li>Type: <strong>{existing.type}</strong></li>
@@ -68,23 +85,24 @@ export default function Details() {
                 <div className={styles.cols}>
                     <p>Description: <strong>{existing.description}</strong></p>
                 </div>
-            
-                <div className={styles.buttons}>
-                    <Button name='Contacts'></Button>
-                    <Button name='Comments'></Button>
-                   
+
+                <div className={styles.buttons} >
+                    <Button onClick={showInfoHandler} name={buttonName} ></Button>
+                    {/* <Button name='Comments'></Button> */}
+
                 </div>
-
-
-
             </div>
         </SectionMain>
+        <SectionMain>
+          {showInfo && <ProfileInfo  profileInfo={existing.contacts}/>}  
+        </SectionMain>
+      
 
 
     </PageContent>
 }
 function getById(id, homes) {
-    const existing = homes.find(home => home.id == id);
+    const existing = homes.homes.find(home => home.id == id);
     return existing
 
 }

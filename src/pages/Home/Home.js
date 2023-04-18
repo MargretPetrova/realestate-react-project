@@ -1,6 +1,6 @@
 // import { useEffect } from "react";
-import { useLoaderData, defer, json, Await, useRouteLoaderData } from "react-router-dom";
-import { Suspense, useEffect, useState } from 'react';
+import { useRouteLoaderData } from "react-router-dom";
+import { Suspense  } from 'react';
 import { ArticleOffers } from "../../components/ArticleOffers/ArticleOffers";
 import { Features } from "../../components/Features/Features";
 import FormComponent from "../../components/Form/Form";
@@ -9,7 +9,8 @@ import { PageContent } from "../../components/PageContent/PageContent";
 import { SectionMain } from "../../components/Section/Section";
 
 function Home() {
-    const homes = useRouteLoaderData('root')
+    const homes = useRouteLoaderData('root');
+   
 
     return (<PageContent title='Welcome'>
         <SectionMain>
@@ -32,20 +33,25 @@ export default Home;
 
 async function loadHomes() {
 
-    const response = await fetch('https://real-estate-agency-8089c-default-rtdb.firebaseio.com/homes.json');
-
-    if (!response.ok) {
-        throw json(
-            { message: 'Could not fetch events.' },
-            {
-                status: 500,
-            }
-        );
-    } else {
-        const resData = await response.json();
-        resData.shift()
-        return resData;
-    }
+    // const response = await fetch('https://real-estate-agency-8089c-default-rtdb.firebaseio.com/homes.json');
+const response = require('../../images/real-estate.json')
+    // if (!response.ok) {
+    //     throw json(
+    //         { message: 'Could not fetch events.' },
+    //         {
+    //             status: 500,
+    //         }
+    //     );
+    // } else {
+    //     const resData = await response.json();
+    //     resData.shift()
+    //     return resData;
+    // }
+   
+ 
+    console.log(response.homes);
+    return response;
+    // console.log(response);
 
 
 }

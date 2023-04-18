@@ -6,6 +6,7 @@ import Button from '../SmallHelpers/Buttons';
 export default function ScrollLiItems(item) {
   
   const current = item.item
+ 
     return <li className={styles.liItems} key={0}>
         <img src={current.image? current.image[1]: current} alt='noalt'>
         </img>
