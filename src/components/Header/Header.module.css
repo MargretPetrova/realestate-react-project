@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 .registerLinks .guest {
@@ -63,10 +63,10 @@
 
 .nav ul {
     display: flex;
-    width: 70%;
+    width: 90%;
     justify-content: space-around;
     align-content: center;
-    flex: 1;
+   
 }
 
 .nav ul li {
@@ -157,6 +157,10 @@
 
     .logo2 {
         display: none;
+    }
+    .registerLinks {
+        gap: 0.5rem;
+        padding-right: 0rem;
     }
 
 }
