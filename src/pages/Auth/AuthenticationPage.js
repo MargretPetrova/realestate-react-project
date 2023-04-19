@@ -4,6 +4,7 @@ import { PageContent } from "../../components/PageContent/PageContent";
 import { SectionMain } from "../../components/Section/Section";
 
 function AuthenticationPage(){
+    
     return(<PageContent>
         <SectionMain>
             <ImageCard/>
