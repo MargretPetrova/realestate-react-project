@@ -1,7 +1,7 @@
 .searchForm {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem ;
+    padding: 1rem ;
     align-items: center;
     font-size: 14px;
     flex:1;
@@ -9,14 +9,6 @@
     color: #bababa;
     
     
-}
-
-.searchForm h3 {
-    border-bottom: 1px solid #8c8c8c;
-    margin-bottom: 10px;
-    font-size: 25px;
-    font-weight: 350;
-    letter-spacing: -0.5px;
 }
 
 .searchForm input {
@@ -78,17 +70,13 @@
 
 @media(max-width:630px) {
     .searchForm{
-        padding:1.5rem  6rem
-    }
-}
-
-@media(max-width:480px) {
-    .searchForm{
         padding:1.5rem  4rem
     }
 }
 
-@media(max-width:380px) {
+
+
+@media(max-width:410px) {
     .searchForm{
         padding:1.5rem  2rem
     }

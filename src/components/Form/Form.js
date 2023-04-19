@@ -1,13 +1,14 @@
 import styles from '../Form/Form.module.css'
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom';
-import Button from '../SmallHelpers/Buttons';
+import Button from '../Buttons/Buttons';
+import FormsTitle from '../Titles/FormsTitle';
 
 const FormComponent = () => {
   return (
     <form className={styles.searchForm} action="#" method="post">
-      <h3>Find Your Property</h3>
+      {/* <h3>Find Your Property</h3> */}
+      <FormsTitle title='Find Your Property'></FormsTitle>
 
       <label> City State, or Zip:</label>
       <input type="text" />

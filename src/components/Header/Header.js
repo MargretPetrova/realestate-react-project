@@ -9,20 +9,20 @@ import styles from '../Header/Header.module.css';
 //   } from "@fortawesome/free-brands-svg-icons";
 import logo1 from '../../images/logo.gif';
 import logo2 from '../../images/logo_img.png'
-import Button from '../SmallHelpers/Buttons';
+import Button from '../Buttons/Buttons';
 import Modal from '../Modal/Modal';
 import useModal from '../../hooks/useModal';
 import AuthForm from '../AuthForm/AuthForm';
 const Header = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const { isShowing, toggle } = useModal();
-  console.log(isShowing);
+ 
 
   const user = null
   const registrationLink = <div className={styles.registerLinks}>
     {user && <Link className={styles.user} to='#'>Logout</Link>}
-    <button className={styles.button} onClick={toggle}><Link className={styles.buttonLinks} to='/?mode=register'>Sign up</Link></button>
-    <button className={styles.button} onClick={toggle}><Link className={styles.buttonLinks} to='/?mode=login'>Login </Link></button>
+    <button className={styles.button} onClick={toggle}><Link className={styles.buttonLinks} to='?mode=register'>Sign up</Link></button>
+    <button className={styles.button} onClick={toggle}><Link className={styles.buttonLinks} to='?mode=login'>Login </Link></button>
     {/* <Link className={styles.guest} to='/auth?mode=register'>Sign up</Link> 
 <Link className={styles.guest} to='/auth?mode=login'>Login </Link> */}
   </div>;
@@ -59,8 +59,8 @@ const Header = () => {
           <li><Link className={styles.links} to='catalog/rent' >Rent</Link></li>
           <li><Link className={styles.links} to='/finance' >Finance</Link></li>
           <li><Link className={styles.links} to='/contacts' >News</Link></li>
-          {isNavExpanded && <Link onClick={toggle} className={styles.guest} to='/?mode=register'>Sign up</Link>}
-          {isNavExpanded && <Link onClick={toggle} className={styles.guest} to='/?mode=login'>Login </Link>}
+          {isNavExpanded && <Link onClick={toggle} className={styles.guest} to='?mode=register'>Sign up</Link>}
+          {isNavExpanded && <Link onClick={toggle} className={styles.guest} to='?mode=login'>Login </Link>}
           {user && <Link onClick={toggle} className={styles.user} to='#'>Logout</Link>}
 
         </ul>

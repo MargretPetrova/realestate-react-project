@@ -6,12 +6,14 @@ import { ScrollItem } from "../../components/ScrollItem/ScrollItem";
 import styles from '../Details/Details.module.css'
 import ScrollLiItems from "../../components/ScrollLiItems/ScrollLiItems";
 import googleMap from '../../images/map.png'
-import ColsTitleComponent from "../../components/SmallHelpers/ColsTitle";
-import TitleConponent from "../../components/SmallHelpers/Title";
-import Button from "../../components/SmallHelpers/Buttons";
+import ColsTitleComponent from "../../components/Titles/ColsTitle";
+import TitleConponent from "../../components/Titles/Title";
+import Button from "../../components/Buttons/Buttons";
 
 import ProfileInfo from "../../components/ProfileInfo/ProfileInfo";
 import { useState } from "react";
+import Paragraf from "../../components/Paragrafs/Paragraf";
+import FormsTitle from "../../components/Titles/FormsTitle";
 
 export default function Details() {
     // !!! get details for the chosen house from loaderData , late it have to be from datebase 
@@ -43,7 +45,7 @@ export default function Details() {
             <ImageCard image={existing.image[1]} />
             <div className={styles.information}>
                 <div className={styles.informationTitle}>
-                    <h3>{existing.title}</h3>
+                   <FormsTitle title={existing.title}></FormsTitle>
                     <p>{existing.city}</p>
                 </div>
                 <h4>Price: <strong>{existing.price} </strong>EURO</h4>
@@ -67,6 +69,7 @@ export default function Details() {
                         <li>Size: <strong>{existing.size}</strong></li>
                         <li>Bathroom: <strong>{existing.bathrooms}</strong></li>
                         <li>Bedroom: <strong>{existing.bedrooms}</strong></li>
+                        
                     </ul>
 
                 </div>
@@ -83,12 +86,12 @@ export default function Details() {
                 </div>
 
                 <div className={styles.cols}>
-                    <p>Description: <strong>{existing.description}</strong></p>
+                    {/* <p>Description: <strong>{existing.description}</strong></p> */}
+                    Description: <Paragraf isStrong={true} text={existing.description}></Paragraf>
                 </div>
 
                 <div className={styles.buttons} >
                     <Button onClick={showInfoHandler} name={buttonName} ></Button>
-                    {/* <Button name='Comments'></Button> */}
 
                 </div>
             </div>

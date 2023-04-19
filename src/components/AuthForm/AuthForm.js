@@ -1,7 +1,7 @@
 import { Link, useSearchParams } from 'react-router-dom';
 
 import styles from '../AuthForm/AuthForm.module.css'
-import Button from '../SmallHelpers/Buttons';
+import Button from '../Buttons/Buttons';
 function AuthForm(){
     const[searchParams] =useSearchParams();
     const isLogin = searchParams.get('mode') === 'login'

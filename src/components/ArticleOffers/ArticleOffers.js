@@ -4,7 +4,7 @@ import styles from '../ArticleOffers/ArticleOffers.module.css';
 import { ScrollItem } from '../ScrollItem/ScrollItem';
 
 import ScrollLiItems from '../ScrollLiItems/ScrollLiItems';
-import TitleConponent from '../SmallHelpers/Title';
+import TitleConponent from '../Titles/Title';
 
 const ArticleOffers = ({homes}) => {
     console.log(homes);

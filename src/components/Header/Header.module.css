@@ -87,7 +87,7 @@
 
 .navButton {
     display: none;
-    background-color: rgb(74, 194, 74);
+    background-color: rgb(128, 164, 32);
 }
 
 /* nav expanded */
@@ -120,8 +120,8 @@
 }
 
 .nav.expanded .list .links:hover {
-    color: rgb(74, 194, 74);
-    border-bottom: 1px solid rgb(74, 194, 74);
+    color: rgb(128, 164, 32);
+    border-bottom: 1px solid rgb(128, 164, 32);
 }
 
 .links {
@@ -129,7 +129,7 @@
 }
 
 .links:hover {
-    color: rgb(74, 194, 74);
+    color: rgb(128, 164, 32);
 
 }
 
@@ -144,6 +144,9 @@
 
     .icons {
         justify-content: flex-end;
+    }
+    .logo2{
+        display: none;
     }
 }
 

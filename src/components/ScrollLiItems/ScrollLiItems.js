@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from '../ScrollLiItems/ScrollLiItems.module.css';
-import Button from '../SmallHelpers/Buttons';
+import Button from '../Buttons/Buttons';
 
 
 export default function ScrollLiItems(item) {

@@ -1,9 +1,10 @@
 import styles from '../ProfileInfo/ProfileInfo.module.css'
-import Button from '../SmallHelpers/Buttons'
+import Button from '../Buttons/Buttons'
 import profile from '../../images/manProfile.jpg';
-import avatar from '../../images/avatar.jpg'
+import avatar from '../../images/avatar.jpg';
+
 export default function ProfileInfo({profileInfo}){
-    console.log(profileInfo[0].firstName);
+    
     return <div className={styles.contactsInfo}>
         <div className={styles.infoDiv}>
         <div className={styles.infoImage}>
@@ -17,7 +18,7 @@ export default function ProfileInfo({profileInfo}){
         </div>
         </div>
         <div className={styles.infoButton}>
-            <Button name='Send email'></Button>
+            <Button name='Send Email'></Button>
         </div>
          </div>
 }
