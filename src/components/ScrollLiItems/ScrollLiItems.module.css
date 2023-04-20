@@ -5,9 +5,24 @@
     padding: 0.2rem;
     cursor: pointer;
     gap: 1rem;
+    /*  */
+    width: 250px;
 }
 
 .liItems img {
+    display: flex;
+    background-repeat: no-repeat;
+    flex: 1;
+}
+.detailsLiItems{
+    display: flex;
+   
+    flex-direction: column;
+    padding: 0.2rem;
+    cursor: pointer;
+    gap: 1rem;
+}
+.detailsLiItems img {
     width: 250px;
     background-repeat: no-repeat;
     height: 200px;

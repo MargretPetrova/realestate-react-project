@@ -29,9 +29,20 @@
     border-bottom: 1px solid #8c8c8c;
    
 }
+.registerForm img{
+    border-radius: 50%;
+}
 .cols div{
     display: flex;
     flex-direction: column;
+}
+.cols label{
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+}
+.cols input{
+    font-size: 20px;
 }
 .cols .info{
     display: flex;

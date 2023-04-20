@@ -28,12 +28,17 @@
     margin: 1.75rem auto;
     border-radius: 3px;
     max-width: 500px;
-    padding: 2rem;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 20px 0.2px #f1f0f0 inset;
+    background-color: black;
+   
   }
   
   .modal-header {
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
+    margin-bottom: -1.6rem;
   }
   
   .modal-close-button {
